@@ -1,0 +1,31 @@
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  input[type=text], textarea, select {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  br {
+    clear: both;
+  }
+
+  button {
+    width: 200px;
+    justify-content: center;
+    padding-left: 10px;
+    align-content: space-between;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left : 300px;
+    cursor:pointer;
+    color: darkgreen;
+  }

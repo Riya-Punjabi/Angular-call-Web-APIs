@@ -1,0 +1,70 @@
+<h2> Welcome to LocationComponent</h2>
+<form>
+  <div class="form-group">
+    <label for="location-name">Location Name :</label>
+    <input type="text" [(ngModel)]="Location.LocationName" name="LocationName" id="location-name">
+
+    <label for="Escino.">ESICNo:</label>
+    <input type="text" [(ngModel)]="Location.ESICNo" name="ESICNo" id="Escino">
+  </div>
+  
+  <div class="form-group">
+    <label for="address">Address:</label>
+    <textarea [(ngModel)]="Location.Address" name="Address" id="address"></textarea>
+  </div>
+  
+  <div class="form-group">
+    <label for="country-id">Country Id:</label>
+    <select [(ngModel)]="Location.CountryId" name="country" id="country-id">
+      <option *ngFor="let c of Country" [value]="c.Value">{{ c.Text }}</option>
+    </select>
+  
+    <label for="state-id">State Id:</label>
+    <select [(ngModel)]="Location.StateId" name="State" id="state-id">
+      <option *ngFor="let state of states" [value]="state.Value">{{ state.Text }}</option>
+    </select>
+  
+    <label for="city-id">City Id:</label>
+    <select [(ngModel)]="Location.CityId" name="City" id="city-id">
+      <option *ngFor="let city of City" [value]="city.Value">{{ city.Text }}</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <label for="employee-id">Employeer:</label>
+    <select [(ngModel)]="Location.Employeer" name="City" id="employee-id">
+      <option *ngFor="let employeer of Employees" [value]="employeer.Value">{{ employeer.Text }}</option>
+    </select>
+  
+    <label for="latitude">Latitude:</label>
+    <input type="text" [(ngModel)]="Location.Latitude" name="Latitude" id="latitude">
+  
+    <label for="longitude">Longitude:</label>
+    <input type="text" [(ngModel)]="Location.Longitude" name="Longitude" id="longitude">
+  </div>
+  
+  <div class="form-group">
+    <label for="tax-no">Tax No.:</label>
+    <input type="text" [(ngModel)]="Location.TaxNo" name="TaxNo" id="tax-no">
+  
+    <label for="nature-of-industry">Nature of Industry:</label>
+    <input type="text" [(ngModel)]="Location.NatureOfIndustry" name="NatureOfIndustry" id="nature-of-industry">
+
+    <label for="pfno.">PFNO:</label>
+    <input type="text" [(ngModel)]="Location.PFNO" name=" PFNO" id=" PFNO">
+  </div>
+  
+  <div class="form-group">
+    <label for="litn-number">LITN number:</label>
+    <input type="text" [(ngModel)]="Location.LINNumber" name="LINNumber" id="litn-number">
+
+    <label for="location-id">Company Id:</label>
+    <input type="text" [(ngModel)]="Location.CompanyId" name="CompanyId" id="company-id">
+  </div>
+   
+  <div class="form-group">
+    <button type="submit" (click)="onSubmit()">Insert Location</button>
+    <button type="submit" (click)="updateLocation()">Update Location</button>
+  </div>
+  </form>
+<br/>

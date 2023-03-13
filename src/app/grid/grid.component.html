@@ -1,0 +1,50 @@
+<app-location [Location]="selectedLocation" (locationupdated)="gridlocation()"></app-location>
+<div>
+<button (click)="gridlocation()">Get Grid Data</button>
+<br/> <br/>
+<table>
+  <thead>
+    <tr>
+        <th></th>
+      <th >Action</th>
+      <th>LocationName</th>
+      <th>LocationId</th>
+      <th>City Id</th>
+      <th>State Id</th>
+      <th>Country Id</th>
+      <th>Employeer</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>ESICNo</th>
+      <th>PFNO</th>
+      <th>TaxNo</th>
+      <th>RegistrationNo</th>
+      <th>NatureOfIndustry</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Location of gridData">
+        <td>
+            <button (click)="editLocation(Location)">Edit</button>
+            <button (click)="deleteLocation(Location)">Delete</button>
+        </td>
+      <td>{{Location.Action }}</td>
+      <td>{{Location.LocationName }}</td>
+      <td> {{Location.LocationId}}</td>
+      <td> {{Location.CityId}}</td>
+      <td> {{Location.StateId}}</td>
+      <td> {{Location.CountryId}}</td>
+      <td> {{Location.Employeer }} </td>
+      <td>{{Location.Latitude }}</td>
+      <td>{{Location.Longitude }}</td>
+      <td>{{Location.ESICNo }}</td>
+      <td>{{Location.PFNO }}</td>
+      <td>{{Location.TaxNo }}</td>
+      <td>{{Location.RegistrationNo }}</td>
+      <td>{{Location.NatureOfIndustry }}</td>
+      <td>{{Location.Address }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

@@ -1,0 +1,16 @@
+<div>
+  <h2>Login</h2>
+  <form >
+    <div>
+      <label for="employeeNo">Employee Number:</label>
+      <input type="text" id="employeeNo" name="employeeNo" [(ngModel)]="employeeNo" required>
+    </div>
+    <br/> <br/>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password" required>
+    </div>
+    <br/> <br/>
+    <button type="submit" (click) = "onSubmit()">Login</button>
+  </form>
+</div>

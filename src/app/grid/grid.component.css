@@ -1,0 +1,32 @@
+
+table {
+  border-collapse: collapse;
+  border : 2px solid black;
+  width: 100%;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+button {
+  cursor: pointer;
+}
